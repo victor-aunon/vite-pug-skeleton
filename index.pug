@@ -1,0 +1,36 @@
+extends ./layout/base
+
+block content
+  .container 
+    h1 This is a mockup
+
+    .content 
+      img(src="./img/Greta.jpg" alt="An embedded image")
+      .content-text
+        p This site is a static website build with 
+          a(href="https://vitejs.dev/" target="_blank" ) vite
+          |  using
+          strong  pug 
+          |  templates. 
+
+        p Pug integration is done by the plugin 
+          a(href="https://github.com/TheSeally/vite-plugin-pug-transformer" target="_blank") vite-plugin-pug-transform 
+
+        p Check the files in the git-hub project to start yours. Take a look at 
+          code index.html 
+          |  file to see how to include your pug templates 
+
+        p You can write your style files using
+         strong  scss 
+         |  or
+         strong  sass.
+
+        hr
+        p 
+          strong #{info.name[0]}
+
+        p Take a look at 
+          code vite.config.js
+          |  file to see how to pass variables to your pug templates.
+
+    .testing-bundle
